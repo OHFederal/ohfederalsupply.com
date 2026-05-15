@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OH Federal Supply LLC | SDVOSB Federal Commercial Supplier</title>
+  <meta name="description" content="OH Federal Supply LLC is a Service-Disabled Veteran-Owned Small Business (SDVOSB) providing IT peripherals, safety equipment, and tools to federal agencies.">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --navy: #041E39;
+      --red: #B0233C;
+      --white: #FFFFFF;
+      --light-gray: #F5F6F8;
+      --mid-gray: #6B7280;
+      --dark-gray: #374151;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      color: var(--dark-gray);
+      line-height: 1.6;
+      background: var(--white);
+    }
+
+    /* NAV */
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(255,255,255,0.97);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid #E5E7EB;
+      z-index: 100;
+      padding: 0 1.5rem;
+    }
+    .nav-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 64px;
+    }
+    .nav-logo { display: flex; align-items: center; gap: 0.75rem; text-decoration: none; }
+    .nav-logo svg { height: 40px; width: auto; }
+    .nav-logo span { font-weight: 700; font-size: 1.05rem; color: var(--navy); }
+    .nav-links { display: flex; gap: 2rem; list-style: none; }
+    .nav-links a {
+      text-decoration: none;
+      color: var(--dark-gray);
+      font-size: 0.9rem;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+    .nav-links a:hover { color: var(--red); }
+
+    .hamburger {
+      display: none;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 0.5rem;
+    }
+    .hamburger span {
+      display: block;
+      width: 22px;
+      height: 2px;
+      background: var(--navy);
+      margin: 5px 0;
+      transition: 0.3s;
+    }
+
+    /* HERO */
+    .hero {
+      padding: 10rem 1.5rem 5rem;
+      text-align: center;
+      background: linear-gradient(168deg, var(--navy) 0%, #0A2E52 100%);
+      color: var(--white);
+    }
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: rgba(176,35,60,0.15);
+      border: 1px solid rgba(176,35,60,0.4);
+      color: #F5A0AE;
+      padding: 0.4rem 1rem;
+      border-radius: 100px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      margin-bottom: 1.5rem;
+    }
+    .hero-badge svg { width: 16px; height: 16px; fill: currentColor; }
+    .hero h1 {
+      font-size: clamp(2rem, 5vw, 3.2rem);
+      font-weight: 700;
+      line-height: 1.2;
+      max-width: 700px;
+      margin: 0 auto 1.25rem;
+    }
+    .hero p {
+      font-size: 1.15rem;
+      color: #B0BECF;
+      max-width: 560px;
+      margin: 0 auto 2.5rem;
+      line-height: 1.7;
+    }
+    .hero-cta {
+      display: inline-block;
+      background: var(--red);
+      color: var(--white);
+      padding: 0.85rem 2rem;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.95rem;
+      transition: background 0.2s, transform 0.15s;
+    }
+    .hero-cta:hover { background: #961E34; transform: translateY(-1px); }
+
+    /* SECTIONS */
+    section { padding: 5rem 1.5rem; }
+    .container { max-width: 1100px; margin: 0 auto; }
+    .section-label {
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--red);
+      margin-bottom: 0.5rem;
+    }
+    .section-title {
+      font-size: 1.75rem;
+      font-weight: 700;
+      color: var(--navy);
+      margin-bottom: 1rem;
+    }
+
+    /* ABOUT */
+    .about { background: var(--white); }
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: center;
+    }
+    .about-text p { margin-bottom: 1rem; color: var(--dark-gray); }
+    .about-stats {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+    }
+    .stat-card {
+      background: var(--light-gray);
+      border-radius: 12px;
+      padding: 1.5rem;
+      text-align: center;
+    }
+    .stat-card .number {
+      font-size: 1.75rem;
+      font-weight: 700;
+      color: var(--navy);
+      line-height: 1;
+    }
+    .stat-card .label {
+      font-size: 0.8rem;
+      color: var(--mid-gray);
+      margin-top: 0.4rem;
+    }
+
+    /* CAPABILITIES */
+    .capabilities { background: var(--light-gray); }
+    .cap-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+      margin-top: 2.5rem;
+    }
+    .cap-card {
+      background: var(--white);
+      border-radius: 12px;
+      padding: 2rem;
+      border: 1px solid #E5E7EB;
+      transition: box-shadow 0.2s, transform 0.15s;
+    }
+    .cap-card:hover { box-shadow: 0 8px 24px rgba(4,30,57,0.08); transform: translateY(-2px); }
+    .cap-icon {
+      width: 48px;
+      height: 48px;
+      background: rgba(176,35,60,0.08);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1rem;
+    }
+    .cap-icon svg { width: 24px; height: 24px; stroke: var(--red); fill: none; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+    .cap-card h3 { font-size: 1.05rem; font-weight: 600; color: var(--navy); margin-bottom: 0.5rem; }
+    .cap-card p { font-size: 0.9rem; color: var(--mid-gray); line-height: 1.6; }
+
+    /* NAICS */
+    .naics { background: var(--white); }
+    .naics-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+    .naics-item {
+      display: flex;
+      align-items: baseline;
+      gap: 0.75rem;
+      padding: 1rem 1.25rem;
+      background: var(--light-gray);
+      border-radius: 8px;
+    }
+    .naics-code {
+      font-weight: 700;
+      color: var(--red);
+      font-size: 0.9rem;
+      white-space: nowrap;
+    }
+    .naics-desc { font-size: 0.9rem; color: var(--dark-gray); }
+
+    /* CONTACT */
+    .contact {
+      background: var(--navy);
+      color: var(--white);
+      text-align: center;
+    }
+    .contact .section-label { color: #F5A0AE; }
+    .contact .section-title { color: var(--white); }
+    .contact-info {
+      display: flex;
+      justify-content: center;
+      gap: 3rem;
+      margin-top: 2rem;
+      flex-wrap: wrap;
+    }
+    .contact-item {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+    .contact-item svg {
+      width: 20px;
+      height: 20px;
+      stroke: var(--red);
+      fill: none;
+      stroke-width: 1.8;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      flex-shrink: 0;
+    }
+    .contact-item a {
+      color: #B0BECF;
+      text-decoration: none;
+      font-size: 0.95rem;
+      transition: color 0.2s;
+    }
+    .contact-item a:hover { color: var(--white); }
+    .contact-item span { color: #B0BECF; font-size: 0.95rem; }
+
+    /* FOOTER */
+    footer {
+      background: #021225;
+      color: var(--mid-gray);
+      text-align: center;
+      padding: 1.5rem;
+      font-size: 0.8rem;
+    }
+
+    /* MOBILE */
+    @media (max-width: 768px) {
+      .nav-links { display: none; }
+      .hamburger { display: block; }
+      .nav-links.open {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 64px;
+        left: 0;
+        right: 0;
+        background: var(--white);
+        padding: 1.5rem;
+        gap: 1rem;
+        border-bottom: 1px solid #E5E7EB;
+      }
+      .hero { padding: 8rem 1.5rem 3.5rem; }
+      .about-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+      .cap-grid { grid-template-columns: 1fr; }
+      .contact-info { flex-direction: column; align-items: center; gap: 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 100" height="40">
+          <circle cx="75.0" cy="50.0" r="50.0" fill="#041E39"/>
+          <circle cx="75.0" cy="50.0" r="36.7" fill="#FFFFFF"/>
+          <path d="M63.6,19.90 A36.7,36.7 0 0,0 51.10,28.60 V71.80 A36.7,36.7 0 0,0 63.60,80.30 V56.10 H87.20 V80.30 A36.7,36.7 0 0,0 99.60,71.70 V43.00 H63.60 V19.90Z" fill="#041E39"/>
+          <path d="M87.20,19.80 V38.40 L93.80,43.00 H100.00 V28.60 A36.7,36.7 0 0,0 87.20,19.80Z" fill="#B0233C"/>
+          <path d="M66.6,43.00 L75.00,36.90 L83.4,43.00Z" fill="#B0233C"/>
+        </svg>
+        <span>OH Federal Supply</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#capabilities">Capabilities</a></li>
+        <li><a href="#naics">NAICS Codes</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="hamburger" onclick="document.getElementById('navLinks').classList.toggle('open')" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-badge">
+      <svg viewBox="0 0 16 16"><path d="M8 0l2 5h5.5l-4.5 3.5 1.7 5.5L8 11l-4.7 3 1.7-5.5L.5 5H6z"/></svg>
+      Service-Disabled Veteran-Owned Small Business
+    </div>
+    <h1>Federal-Ready Commercial Supplies, Veteran-Owned</h1>
+    <p>IT peripherals, safety equipment, and tools delivered to federal agencies with the reliability and accountability of a veteran-owned operation.</p>
+    <a href="#contact" class="hero-cta">Get in Touch</a>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-text">
+          <p class="section-label">About Us</p>
+          <h2 class="section-title">Built to Serve</h2>
+          <p>OH Federal Supply LLC is a Nevada-based, Service-Disabled Veteran-Owned Small Business (SDVOSB) founded by Samuel R. Howard, a United States Marine Corps veteran with a 100% Permanent & Total disability rating.</p>
+          <p>We provide commercial products to federal agencies through streamlined procurement channels including SAM.gov, DLA DIBBS, and GSA Schedule. Our focus is getting the right supplies to government buyers quickly, competitively, and without red tape.</p>
+          <p>As a single-member LLC with low overhead and strong distributor relationships, we deliver value that larger competitors can't match&mdash;with the set-aside advantages that agencies need to meet their small business goals.</p>
+        </div>
+        <div class="about-stats">
+          <div class="stat-card">
+            <div class="number">SDVOSB</div>
+            <div class="label">Set-Aside Eligible</div>
+          </div>
+          <div class="stat-card">
+            <div class="number">USMC</div>
+            <div class="label">Veteran Founded</div>
+          </div>
+          <div class="stat-card">
+            <div class="number">100%</div>
+            <div class="label">P&T Disability Rating</div>
+          </div>
+          <div class="stat-card">
+            <div class="number">NV</div>
+            <div class="label">Las Vegas, Nevada</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CAPABILITIES -->
+  <section class="capabilities" id="capabilities">
+    <div class="container">
+      <p class="section-label">What We Supply</p>
+      <h2 class="section-title">Core Product Categories</h2>
+      <div class="cap-grid">
+        <div class="cap-card">
+          <div class="cap-icon">
+            <svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+          </div>
+          <h3>IT Peripherals</h3>
+          <p>Keyboards, mice, monitors, docking stations, cables, storage devices, and computer accessories from authorized distributors.</p>
+        </div>
+        <div class="cap-card">
+          <div class="cap-icon">
+            <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h3>Safety & PPE</h3>
+          <p>Personal protective equipment, first aid supplies, safety signage, and medical/surgical supplies for workplace compliance.</p>
+        </div>
+        <div class="cap-card">
+          <div class="cap-icon">
+            <svg viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+          </div>
+          <h3>Tools & MRO</h3>
+          <p>Hand tools, power tools, maintenance supplies, and facility equipment for repair and operations needs.</p>
+        </div>
+        <div class="cap-card">
+          <div class="cap-icon">
+            <svg viewBox="0 0 24 24"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg>
+          </div>
+          <h3>AV & Electronics</h3>
+          <p>Audiovisual equipment, displays, conferencing hardware, and consumer electronics for agency facilities.</p>
+        </div>
+        <div class="cap-card">
+          <div class="cap-icon">
+            <svg viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+          </div>
+          <h3>Cybersecurity Hardware</h3>
+          <p>Network security appliances, hardware tokens, encrypted storage, and endpoint protection devices.</p>
+        </div>
+        <div class="cap-card">
+          <div class="cap-icon">
+            <svg viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+          </div>
+          <h3>Office & Facility Supplies</h3>
+          <p>General office products, janitorial supplies, and facility management essentials for day-to-day operations.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NAICS -->
+  <section class="naics" id="naics">
+    <div class="container">
+      <p class="section-label">Codes & Classifications</p>
+      <h2 class="section-title">NAICS Codes</h2>
+      <div class="naics-grid">
+        <div class="naics-item">
+          <span class="naics-code">423430</span>
+          <span class="naics-desc">Computer & Peripheral Equipment Wholesale</span>
+        </div>
+        <div class="naics-item">
+          <span class="naics-code">423450</span>
+          <span class="naics-desc">Medical & Safety Equipment</span>
+        </div>
+        <div class="naics-item">
+          <span class="naics-code">423710</span>
+          <span class="naics-desc">Hardware & Tool Wholesale</span>
+        </div>
+        <div class="naics-item">
+          <span class="naics-code">339113</span>
+          <span class="naics-desc">Surgical Appliance & PPE Manufacturing</span>
+        </div>
+        <div class="naics-item">
+          <span class="naics-code">332999</span>
+          <span class="naics-desc">Miscellaneous Fabricated Metal Products</span>
+        </div>
+        <div class="naics-item">
+          <span class="naics-code">423620</span>
+          <span class="naics-desc">Consumer Electronics Wholesale</span>
+        </div>
+      </div>
+
+      <h3 style="margin-top: 2.5rem; font-size: 1.1rem; color: var(--navy); font-weight: 600;">Target Agencies</h3>
+      <p style="margin-top: 0.5rem; color: var(--mid-gray); font-size: 0.95rem;">
+        Department of Veterans Affairs (VA) &bull; Department of Defense (DoD/DLA) &bull; Department of Homeland Security (DHS) &bull; U.S. Army Corps of Engineers &bull; General Services Administration (GSA)
+      </p>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <p class="section-label">Get in Touch</p>
+      <h2 class="section-title">Ready to Work Together?</h2>
+      <p style="color: #B0BECF; max-width: 500px; margin: 0 auto;">
+        Whether you're a contracting officer, procurement specialist, or agency buyer&mdash;we'd like to hear from you.
+      </p>
+      <div class="contact-info">
+        <div class="contact-item">
+          <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          <a href="mailto:sam@ohfederal.com">sam@ohfederal.com</a>
+        </div>
+        <div class="contact-item">
+          <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.81.36 1.6.68 2.36a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.76.32 1.55.55 2.36.68A2 2 0 0 1 22 16.92z"/></svg>
+          <a href="tel:+17025091775">(702) 509-1775</a>
+        </div>
+        <div class="contact-item">
+          <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span>Las Vegas, Nevada</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    &copy; 2026 OH Federal Supply LLC. All rights reserved. &nbsp;|&nbsp; SDVOSB &nbsp;|&nbsp; CAGE Code Pending &nbsp;|&nbsp; UEI Pending
+  </footer>
+
+</body>
+</html>

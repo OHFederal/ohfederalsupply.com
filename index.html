@@ -3,8 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>OH Federal Supply LLC | SDVOSB Federal Commercial Supplier</title>
-  <meta name="description" content="OH Federal Supply LLC is a Service-Disabled Veteran-Owned Small Business (SDVOSB) providing IT peripherals, safety equipment, and tools to federal agencies.">
+  <title>OH Federal Supply LLC | SDVOSB Supplier — IT, Safety &amp; Tools | GPC Accepted</title>
+  <meta name="description" content="Veteran-owned (SDVOSB) supplier of IT peripherals, safety/PPE, and tools to federal agencies. Government Purchase Cards accepted for micro-purchases under $10K. CAGE 20R31 · UEI ELWUD2BV11M3 · quotes within 24 hours.">
+  <meta name="keywords" content="SDVOSB, government purchase card supplier, GPC, micro-purchase, federal IT supplier, veteran owned small business, CAGE 20R31, GSA, DLA, Las Vegas">
+  <meta property="og:title" content="OH Federal Supply LLC — SDVOSB Supplier | GPC Accepted">
+  <meta property="og:description" content="Veteran-owned federal supplier of IT, safety, and tool products. Government Purchase Cards accepted. Quotes within 24 hours.">
+  <meta property="og:type" content="website">
   <link rel="icon" type="image/png" href="favicon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -259,6 +263,33 @@
     }
     .contact-item a:hover { color: var(--white); }
     .contact-item span { color: #B0BECF; font-size: 0.95rem; }
+    /* HERO CREDS */
+    .hero-creds {
+      color: #F5A0AE;
+      font-weight: 600;
+      font-size: 0.85rem;
+      letter-spacing: 0.04em;
+      margin: 0 auto 2rem;
+    }
+    /* GPC / MICRO-PURCHASE */
+    .gpc { background: var(--white); border-top: 4px solid var(--red); }
+    .gpc-intro { max-width: 760px; color: var(--dark-gray); font-size: 1.05rem; margin-bottom: 2rem; }
+    .gpc-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.25rem;
+      margin-bottom: 1.75rem;
+    }
+    .gpc-item {
+      background: var(--light-gray);
+      border-radius: 10px;
+      padding: 1.25rem;
+      border-left: 3px solid var(--red);
+    }
+    .gpc-item strong { display: block; color: var(--navy); font-size: 1rem; margin-bottom: 0.35rem; }
+    .gpc-item span { color: var(--mid-gray); font-size: 0.9rem; line-height: 1.5; }
+    .gpc-cred { color: var(--navy); font-weight: 700; font-size: 0.9rem; letter-spacing: 0.03em; margin-bottom: 1.5rem; }
+    @media (max-width: 768px) { .gpc-grid { grid-template-columns: 1fr; } }
     /* FOOTER */
     footer {
       background: #021225;
@@ -305,6 +336,7 @@
         <span>OH Federal Supply</span>
       </a>
       <ul class="nav-links" id="navLinks">
+        <li><a href="#gpc">Purchase Card Buyers</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#capabilities">Capabilities</a></li>
         <li><a href="#naics">NAICS Codes</a></li>
@@ -322,8 +354,27 @@
       Service-Disabled Veteran-Owned Small Business
     </div>
     <h1>Federal-Ready Commercial Supplies, Veteran-Owned</h1>
-    <p>IT peripherals, safety equipment, and tools delivered to federal agencies with the reliability and accountability of a veteran-owned operation.</p>
-    <a href="#contact" class="hero-cta">Get in Touch</a>
+    <p>IT peripherals, safety equipment, and tools delivered to federal agencies with the reliability and accountability of a veteran-owned operation. <strong>Government Purchase Cards accepted.</strong></p>
+    <p class="hero-creds">SDVOSB &nbsp;•&nbsp; CAGE 20R31 &nbsp;•&nbsp; UEI ELWUD2BV11M3 &nbsp;•&nbsp; GPC Accepted</p>
+    <a href="#contact" class="hero-cta">Request a Quote</a>
+  </section>
+  <!-- GPC / MICRO-PURCHASE -->
+  <section class="gpc" id="gpc">
+    <div class="container">
+      <p class="section-label">Government Purchase Card Buyers</p>
+      <h2 class="section-title">Card-Ready. No Contract Needed.</h2>
+      <p class="gpc-intro">For purchases under the $10,000 micro-purchase threshold, skip the solicitation. Tell us what you need, get a quote within 24 hours, and put it on your Government Purchase Card. As a Service-Disabled Veteran-Owned Small Business, every dollar you spend with us helps meet your small-business and veteran set-aside goals.</p>
+      <div class="gpc-grid">
+        <div class="gpc-item"><strong>GPC Accepted</strong><span>Visa &amp; Mastercard, up to the $10K micro-purchase threshold.</span></div>
+        <div class="gpc-item"><strong>No Contract Required</strong><span>Quote, card, ship — no formal solicitation needed.</span></div>
+        <div class="gpc-item"><strong>SDVOSB Set-Aside</strong><span>Counts toward your small-business &amp; veteran goals.</span></div>
+        <div class="gpc-item"><strong>24-Hour Quotes</strong><span>Fast turnaround, shipped to any federal facility.</span></div>
+        <div class="gpc-item"><strong>Docs on Request</strong><span>W-9, capability statement &amp; line pricing ready to go.</span></div>
+        <div class="gpc-item"><strong>Authorized Distribution</strong><span>Brand-name product via Ingram Micro, TD SYNNEX, D&amp;H &amp; Grainger.</span></div>
+      </div>
+      <p class="gpc-cred">SDVOSB &nbsp;•&nbsp; CAGE 20R31 &nbsp;•&nbsp; UEI ELWUD2BV11M3</p>
+      <a href="#contact" class="hero-cta">Request a Quote</a>
+    </div>
   </section>
   <!-- ABOUT -->
   <section class="about" id="about">

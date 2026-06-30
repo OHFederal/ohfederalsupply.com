@@ -3,323 +3,228 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>OH Federal Supply LLC | SDVOSB-Certified Federal Supplier — Pro AV, IT &amp; Medical-AV | GPC Accepted</title>
-  <meta name="description" content="Veteran-owned federal supplier of professional AV &amp; audio, IT hardware, medical-AV displays, and business equipment. Government Purchase Cards accepted for micro-purchases under $10K. SBA-certified SDVOSB &amp; VOSB. CAGE 20R31 · UEI ELWUD2BV11M3 · quotes within 24 hours.">
-  <meta name="keywords" content="veteran-owned small business, SDVOSB certified, VOSB certified, pro AV supplier, professional audio, medical AV displays, federal IT hardware, government purchase card supplier, GPC, micro-purchase, CAGE 20R31, GSA, DLA, Las Vegas">
-  <meta property="og:title" content="OH Federal Supply LLC — SDVOSB-Certified Federal Supplier | Pro AV, IT &amp; Medical-AV">
-  <meta property="og:description" content="SBA-certified SDVOSB &amp; VOSB federal supplier of professional AV, IT hardware, and medical-AV displays. Government Purchase Cards accepted. Quotes within 24 hours.">
+  <title>OH Federal Supply LLC | SDVOSB Government Purchase Card Supplier — Pro AV, IT &amp; Medical-AV</title>
+  <meta name="description" content="Veteran-owned (SDVOSB &amp; VOSB certified) federal supplier of professional AV &amp; audio, IT hardware, and medical-AV displays. Government Purchase Cards accepted for micro-purchases under $10K — quote, card, ship, no contract needed. Quotes within 24 hours. CAGE 20R31 · UEI ELWUD2BV11M3 · Las Vegas, NV.">
+  <meta name="keywords" content="government purchase card supplier, GPC accepted vendor, federal micro-purchase supplier, SDVOSB certified, VOSB certified, veteran-owned federal supplier, pro AV supplier, professional audio, medical AV displays, federal IT hardware, monitors docking stations cables, GSA, DLA DIBBS, CAGE 20R31, Las Vegas Nevada">
+  <meta property="og:title" content="OH Federal Supply LLC — SDVOSB Government Purchase Card Supplier | Pro AV, IT &amp; Medical-AV">
+  <meta property="og:description" content="SBA-certified SDVOSB &amp; VOSB federal supplier. Government Purchase Cards accepted for sub-$10K micro-purchases — quote, card, ship. Quotes within 24 hours.">
   <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ohfederal.com">
+  <link rel="canonical" href="https://ohfederal.com">
   <link rel="icon" type="image/png" href="favicon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <style>
     *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
     :root {
       --navy: #041E39;
+      --navy-2: #0A2E52;
       --red: #B0233C;
+      --red-dark: #961E34;
       --white: #FFFFFF;
       --light-gray: #F5F6F8;
       --mid-gray: #6B7280;
       --dark-gray: #374151;
+      --line: #E5E7EB;
     }
     html { scroll-behavior: smooth; }
     body {
       font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-      color: var(--dark-gray);
-      line-height: 1.6;
-      background: var(--white);
+      color: var(--dark-gray); line-height: 1.6; background: var(--white);
     }
+    /* Orphan control: balance headline lines, prevent lone last words in body copy */
+    h1, h2, h3, .section-title, .hero h1 { text-wrap: balance; }
+    p, li, .section-intro, .gpc-intro, .contact-lead { text-wrap: pretty; }
     /* NAV */
-    nav {
-      position: fixed;
-      top: 0;
-      width: 100%;
-      background: rgba(255,255,255,0.97);
-      backdrop-filter: blur(8px);
-      border-bottom: 1px solid #E5E7EB;
-      z-index: 100;
-      padding: 0 1.5rem;
-    }
-    .nav-inner {
-      max-width: 1100px;
-      margin: 0 auto;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      height: 64px;
-    }
+    nav { position: fixed; top: 0; width: 100%; background: rgba(255,255,255,0.97); backdrop-filter: blur(8px); border-bottom: 1px solid var(--line); z-index: 100; padding: 0 1.5rem; }
+    .nav-inner { max-width: 1100px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; height: 64px; }
     .nav-logo { display: flex; align-items: center; gap: 0.75rem; text-decoration: none; }
     .nav-logo svg { height: 40px; width: auto; }
     .nav-logo span { font-weight: 700; font-size: 1.05rem; color: var(--navy); }
-    .nav-links { display: flex; gap: 2rem; list-style: none; }
-    .nav-links a {
-      text-decoration: none;
-      color: var(--dark-gray);
-      font-size: 0.9rem;
-      font-weight: 500;
-      transition: color 0.2s;
-    }
+    .nav-links { display: flex; gap: 1.75rem; list-style: none; align-items: center; }
+    .nav-links a { text-decoration: none; color: var(--dark-gray); font-size: 0.9rem; font-weight: 500; transition: color 0.2s; }
     .nav-links a:hover { color: var(--red); }
-    .hamburger {
-      display: none;
-      background: none;
-      border: none;
-      cursor: pointer;
-      padding: 0.5rem;
-    }
-    .hamburger span {
-      display: block;
-      width: 22px;
-      height: 2px;
-      background: var(--navy);
-      margin: 5px 0;
-      transition: 0.3s;
-    }
+    .nav-cta { background: var(--red); color: var(--white) !important; padding: 0.5rem 1.1rem; border-radius: 7px; font-weight: 600 !important; }
+    .nav-cta:hover { background: var(--red-dark); }
+    .hamburger { display: none; background: none; border: none; cursor: pointer; padding: 0.5rem; }
+    .hamburger span { display: block; width: 22px; height: 2px; background: var(--navy); margin: 5px 0; transition: 0.3s; }
     /* HERO */
-    .hero {
-      padding: 10rem 1.5rem 5rem;
-      text-align: center;
-      background: linear-gradient(168deg, var(--navy) 0%, #0A2E52 100%);
-      color: var(--white);
-    }
-    .hero-badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.5rem;
-      background: rgba(176,35,60,0.15);
-      border: 1px solid rgba(176,35,60,0.4);
-      color: #F5A0AE;
-      padding: 0.4rem 1rem;
-      border-radius: 100px;
-      font-size: 0.8rem;
-      font-weight: 600;
-      letter-spacing: 0.05em;
-      text-transform: uppercase;
-      margin-bottom: 1.5rem;
-    }
+    .hero { padding: 9.5rem 1.5rem 4.5rem; text-align: center; background: linear-gradient(168deg, var(--navy) 0%, var(--navy-2) 100%); color: var(--white); }
+    .hero-badge { display: inline-flex; align-items: center; gap: 0.5rem; background: rgba(176,35,60,0.15); border: 1px solid rgba(176,35,60,0.4); color: #F5A0AE; padding: 0.4rem 1rem; border-radius: 100px; font-size: 0.8rem; font-weight: 600; letter-spacing: 0.05em; text-transform: uppercase; margin-bottom: 1.5rem; }
     .hero-badge svg { width: 16px; height: 16px; fill: currentColor; }
-    .hero h1 {
-      font-size: clamp(2rem, 5vw, 3.2rem);
-      font-weight: 700;
-      line-height: 1.2;
-      max-width: 700px;
-      margin: 0 auto 1.25rem;
-    }
-    .hero p {
-      font-size: 1.15rem;
-      color: #B0BECF;
-      max-width: 560px;
-      margin: 0 auto 2.5rem;
-      line-height: 1.7;
-    }
-    .hero-cta {
-      display: inline-block;
-      background: var(--red);
-      color: var(--white);
-      padding: 0.85rem 2rem;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: 600;
-      font-size: 0.95rem;
-      transition: background 0.2s, transform 0.15s;
-    }
-    .hero-cta:hover { background: #961E34; transform: translateY(-1px); }
+    .hero h1 { font-size: clamp(2rem, 5vw, 3.2rem); font-weight: 800; line-height: 1.18; max-width: 760px; margin: 0 auto 1.25rem; }
+    .hero h1 .accent { color: #F5A0AE; }
+    .hero p.lead { font-size: 1.15rem; color: #B0BECF; max-width: 600px; margin: 0 auto 1.5rem; line-height: 1.7; }
+    .hero-creds { color: #F5A0AE; font-weight: 600; font-size: 0.82rem; letter-spacing: 0.04em; margin: 0 auto 2rem; }
+    .hero-ctas { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+    .btn { display: inline-block; padding: 0.85rem 2rem; border-radius: 8px; text-decoration: none; font-weight: 600; font-size: 0.95rem; cursor: pointer; border: none; transition: background 0.2s, transform 0.15s, border-color 0.2s; }
+    .btn-primary { background: var(--red); color: var(--white); }
+    .btn-primary:hover { background: var(--red-dark); transform: translateY(-1px); }
+    .btn-ghost { background: transparent; color: var(--white); border: 1px solid rgba(255,255,255,0.4); }
+    .btn-ghost:hover { border-color: var(--white); transform: translateY(-1px); }
+    /* TRUST BAR */
+    .trustbar { background: #021225; padding: 1.5rem; border-top: 1px solid rgba(255,255,255,0.06); }
+    .trustbar-inner { max-width: 1100px; margin: 0 auto; text-align: center; }
+    .trustbar .eyebrow { color: #6B7E97; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 0.9rem; }
+    .chips { display: flex; flex-wrap: wrap; gap: 0.6rem; justify-content: center; }
+    .chip { font-size: 0.78rem; font-weight: 600; color: #C7D2DF; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.12); padding: 0.4rem 0.85rem; border-radius: 6px; }
+    .chip.cert { color: #F5A0AE; border-color: rgba(176,35,60,0.45); background: rgba(176,35,60,0.12); }
     /* SECTIONS */
-    section { padding: 5rem 1.5rem; }
+    section { padding: 4.5rem 1.5rem; }
     .container { max-width: 1100px; margin: 0 auto; }
-    .section-label {
-      font-size: 0.75rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-      color: var(--red);
-      margin-bottom: 0.5rem;
-    }
-    .section-title {
-      font-size: 1.75rem;
-      font-weight: 700;
-      color: var(--navy);
-      margin-bottom: 1rem;
-    }
-    /* ABOUT */
-    .about { background: var(--white); }
-    .about-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 4rem;
-      align-items: center;
-    }
-    .about-text p { margin-bottom: 1rem; color: var(--dark-gray); }
-    .about-stats {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 1.5rem;
-    }
-    .stat-card {
-      background: var(--light-gray);
-      border-radius: 12px;
-      padding: 1.5rem;
-      text-align: center;
-    }
-    .stat-card .number {
-      font-size: 1.75rem;
-      font-weight: 700;
-      color: var(--navy);
-      line-height: 1;
-    }
-    .stat-card .label {
-      font-size: 0.8rem;
-      color: var(--mid-gray);
-      margin-top: 0.4rem;
-    }
-    /* CAPABILITIES */
-    .capabilities { background: var(--light-gray); }
-    .cap-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 1.5rem;
-      margin-top: 2.5rem;
-    }
-    .cap-card {
-      background: var(--white);
-      border-radius: 12px;
-      padding: 2rem;
-      border: 1px solid #E5E7EB;
-      transition: box-shadow 0.2s, transform 0.15s;
-    }
-    .cap-card:hover { box-shadow: 0 8px 24px rgba(4,30,57,0.08); transform: translateY(-2px); }
-    .cap-icon {
-      width: 48px;
-      height: 48px;
-      background: rgba(176,35,60,0.08);
-      border-radius: 10px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-bottom: 1rem;
-    }
-    .cap-icon svg { width: 24px; height: 24px; stroke: var(--red); fill: none; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
-    .cap-card h3 { font-size: 1.05rem; font-weight: 600; color: var(--navy); margin-bottom: 0.5rem; }
-    .cap-card p { font-size: 0.9rem; color: var(--mid-gray); line-height: 1.6; }
-    /* NAICS */
-    .naics { background: var(--white); }
-    .naics-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-      gap: 1rem;
-      margin-top: 2rem;
-    }
-    .naics-item {
-      display: flex;
-      align-items: baseline;
-      gap: 0.75rem;
-      padding: 1rem 1.25rem;
-      background: var(--light-gray);
-      border-radius: 8px;
-    }
-    .naics-code {
-      font-weight: 700;
-      color: var(--red);
-      font-size: 0.9rem;
-      white-space: nowrap;
-    }
-    .naics-desc { font-size: 0.9rem; color: var(--dark-gray); }
-    /* CONTACT */
-    .contact {
-      background: var(--navy);
-      color: var(--white);
-      text-align: center;
-    }
-    .contact .section-label { color: #F5A0AE; }
-    .contact .section-title { color: var(--white); }
-    .contact-info {
-      display: flex;
-      justify-content: center;
-      gap: 3rem;
-      margin-top: 2rem;
-      flex-wrap: wrap;
-    }
-    .contact-item {
-      display: flex;
-      align-items: center;
-      gap: 0.75rem;
-    }
-    .contact-item svg {
-      width: 20px;
-      height: 20px;
-      stroke: var(--red);
-      fill: none;
-      stroke-width: 1.8;
-      stroke-linecap: round;
-      stroke-linejoin: round;
-      flex-shrink: 0;
-    }
-    .contact-item a {
-      color: #B0BECF;
-      text-decoration: none;
-      font-size: 0.95rem;
-      transition: color 0.2s;
-    }
-    .contact-item a:hover { color: var(--white); }
-    .contact-item span { color: #B0BECF; font-size: 0.95rem; }
-    /* HERO CREDS */
-    .hero-creds {
-      color: #F5A0AE;
-      font-weight: 600;
-      font-size: 0.85rem;
-      letter-spacing: 0.04em;
-      margin: 0 auto 2rem;
-    }
-    /* GPC / MICRO-PURCHASE */
-    .gpc { background: var(--white); border-top: 4px solid var(--red); }
+    .section-label { font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: var(--red); margin-bottom: 0.5rem; }
+    .section-title { font-size: 1.75rem; font-weight: 700; color: var(--navy); margin-bottom: 1rem; }
+    .section-intro { max-width: 760px; color: var(--dark-gray); font-size: 1.03rem; }
+    /* STATS */
+    .stats { background: var(--white); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); padding: 3rem 1.5rem; }
+    .stats-grid { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; text-align: center; }
+    .stat .num { font-size: 2.1rem; font-weight: 800; color: var(--navy); line-height: 1; }
+    .stat .num .unit { color: var(--red); }
+    .stat .cap { font-size: 0.85rem; color: var(--mid-gray); margin-top: 0.5rem; }
+    /* GPC */
+    .gpc { background: var(--light-gray); border-top: 4px solid var(--red); }
     .gpc-intro { max-width: 760px; color: var(--dark-gray); font-size: 1.05rem; margin-bottom: 2rem; }
-    .gpc-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 1.25rem;
-      margin-bottom: 1.75rem;
-    }
-    .gpc-item {
-      background: var(--light-gray);
-      border-radius: 10px;
-      padding: 1.25rem;
-      border-left: 3px solid var(--red);
-    }
+    .gpc-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; margin-bottom: 1.75rem; }
+    .gpc-item { background: var(--white); border-radius: 10px; padding: 1.25rem; border-left: 3px solid var(--red); }
     .gpc-item strong { display: block; color: var(--navy); font-size: 1rem; margin-bottom: 0.35rem; }
     .gpc-item span { color: var(--mid-gray); font-size: 0.9rem; line-height: 1.5; }
     .gpc-cred { color: var(--navy); font-weight: 700; font-size: 0.9rem; letter-spacing: 0.03em; margin-bottom: 1.5rem; }
-    @media (max-width: 768px) { .gpc-grid { grid-template-columns: 1fr; } }
+    .buy-line { margin: 0.25rem 0 1.75rem; }
+    .buy-line .lbl { font-size: 0.74rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--mid-gray); margin-bottom: 0.6rem; }
+    .buy-chips { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+    .buy-chip { font-size: 0.8rem; font-weight: 600; color: var(--navy); background: var(--white); border: 1px solid var(--line); border-radius: 6px; padding: 0.4rem 0.8rem; }
+    /* CAPABILITIES */
+    .capabilities { background: var(--white); }
+    .cap-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-top: 2.5rem; }
+    .cap-card { background: var(--white); border-radius: 12px; padding: 2rem; border: 1px solid var(--line); transition: box-shadow 0.2s, transform 0.15s; }
+    .cap-card:hover { box-shadow: 0 8px 24px rgba(4,30,57,0.08); transform: translateY(-2px); }
+    .cap-icon { width: 48px; height: 48px; background: rgba(176,35,60,0.08); border-radius: 10px; display: flex; align-items: center; justify-content: center; margin-bottom: 1rem; }
+    .cap-icon svg { width: 24px; height: 24px; stroke: var(--red); fill: none; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+    .cap-card h3 { font-size: 1.05rem; font-weight: 600; color: var(--navy); margin-bottom: 0.5rem; }
+    .cap-card p { font-size: 0.9rem; color: var(--mid-gray); line-height: 1.6; }
+    /* PARTNER */
+    .partner { background: linear-gradient(168deg, var(--navy) 0%, var(--navy-2) 100%); color: var(--white); }
+    .partner .section-label { color: #F5A0AE; }
+    .partner .section-title { color: var(--white); }
+    .partner .section-intro { color: #B0BECF; }
+    .partner-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.25rem; margin: 2.5rem 0 2rem; }
+    .partner-card { background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; padding: 1.5rem; }
+    .partner-card .pc-icon { width: 42px; height: 42px; background: rgba(176,35,60,0.18); border-radius: 9px; display: flex; align-items: center; justify-content: center; margin-bottom: 0.9rem; }
+    .partner-card .pc-icon svg { width: 22px; height: 22px; stroke: #F5A0AE; fill: none; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+    .partner-card h3 { font-size: 0.98rem; font-weight: 600; color: var(--white); margin-bottom: 0.4rem; }
+    .partner-card p { font-size: 0.85rem; color: #B0BECF; line-height: 1.55; }
+    /* PROOF */
+    .proof { background: var(--light-gray); }
+    .proof-grid { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 3rem; align-items: center; }
+    .proof ul { list-style: none; margin-top: 1.5rem; }
+    .proof li { display: flex; gap: 0.75rem; align-items: flex-start; margin-bottom: 0.9rem; color: var(--dark-gray); font-size: 0.95rem; }
+    .proof li svg { width: 20px; height: 20px; stroke: var(--red); fill: none; stroke-width: 2; flex-shrink: 0; margin-top: 2px; }
+    .proof-card { background: var(--navy); color: var(--white); border-radius: 14px; padding: 2rem; }
+    .proof-card h3 { font-size: 1.05rem; color: var(--white); margin-bottom: 1rem; font-weight: 700; }
+    .proof-card .pc-row { display: flex; justify-content: space-between; padding: 0.6rem 0; border-bottom: 1px solid rgba(255,255,255,0.1); font-size: 0.9rem; }
+    .proof-card .pc-row:last-child { border-bottom: none; }
+    .proof-card .pc-row span:first-child { color: #B0BECF; }
+    .proof-card .pc-row span:last-child { color: var(--white); font-weight: 600; text-align: right; }
+    /* ABOUT */
+    .about { background: var(--white); }
+    .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; }
+    .about-text p { margin-bottom: 1rem; color: var(--dark-gray); }
+    .about-stats { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
+    .stat-card { background: var(--light-gray); border-radius: 12px; padding: 1.5rem; text-align: center; }
+    .stat-card .number { font-size: 1.75rem; font-weight: 700; color: var(--navy); line-height: 1; }
+    .stat-card .label { font-size: 0.8rem; color: var(--mid-gray); margin-top: 0.4rem; }
+    /* NAICS */
+    .naics { background: var(--light-gray); }
+    .naics-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1rem; margin-top: 2rem; }
+    .naics-item { display: flex; align-items: baseline; gap: 0.75rem; padding: 1rem 1.25rem; background: var(--white); border-radius: 8px; border: 1px solid var(--line); }
+    .naics-code { font-weight: 700; color: var(--red); font-size: 0.9rem; white-space: nowrap; }
+    .naics-desc { font-size: 0.9rem; color: var(--dark-gray); }
+    .reg-strip { display: flex; flex-wrap: wrap; gap: 0.6rem; margin-top: 2.5rem; }
+    .reg-pill { font-size: 0.8rem; font-weight: 600; color: var(--navy); background: var(--white); border: 1px solid var(--line); border-radius: 6px; padding: 0.45rem 0.9rem; }
+    .reg-pill .dot { color: #1B9C5B; font-weight: 800; }
+    .reg-pill .dot.amber { color: #C9851A; }
+    /* FAQ */
+    .faq { background: var(--white); }
+    .faq-list { margin-top: 2rem; display: grid; gap: 0.75rem; }
+    .faq-item { border: 1px solid var(--line); border-radius: 10px; padding: 1.25rem 1.5rem; background: var(--light-gray); }
+    .faq-item h3 { font-size: 1rem; color: var(--navy); margin-bottom: 0.4rem; font-weight: 600; }
+    .faq-item p { font-size: 0.9rem; color: var(--mid-gray); line-height: 1.6; }
+    /* CONTACT + QUOTE FORM */
+    .contact { background: var(--navy); color: var(--white); }
+    .contact .section-label { color: #F5A0AE; }
+    .contact .section-title { color: var(--white); }
+    .contact-lead { color: #B0BECF; max-width: 620px; }
+    .contact-wrap { display: grid; grid-template-columns: 1.3fr 0.7fr; gap: 3rem; margin-top: 2.25rem; text-align: left; align-items: start; }
+    .quote-form { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+    .quote-form .fld { display: flex; flex-direction: column; gap: 0.3rem; }
+    .quote-form .fld.full { grid-column: 1 / -1; }
+    .quote-form label { font-size: 0.78rem; color: #B0BECF; font-weight: 600; }
+    .quote-form input, .quote-form textarea { background: var(--white); border: 1px solid rgba(255,255,255,0.2); border-radius: 7px; padding: 0.6rem 0.7rem; font-family: inherit; font-size: 0.9rem; color: var(--dark-gray); width: 100%; }
+    .quote-form input:focus, .quote-form textarea:focus { outline: 2px solid var(--red); border-color: var(--red); }
+    .quote-form .submit-row { grid-column: 1 / -1; display: flex; align-items: center; gap: 1rem; flex-wrap: wrap; }
+    .form-note { font-size: 0.78rem; color: #6B7E97; }
+    .contact-side { display: flex; flex-direction: column; gap: 1.1rem; }
+    .contact-item { display: flex; align-items: center; gap: 0.75rem; }
+    .contact-item svg { width: 20px; height: 20px; stroke: var(--red); fill: none; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; flex-shrink: 0; }
+    .contact-item a { color: #B0BECF; text-decoration: none; font-size: 0.95rem; transition: color 0.2s; }
+    .contact-item a:hover { color: var(--white); }
+    .contact-item span { color: #B0BECF; font-size: 0.95rem; }
+    .side-creds { font-size: 0.8rem; color: #F5A0AE; font-weight: 600; margin-top: 0.5rem; line-height: 1.7; }
     /* FOOTER */
-    footer {
-      background: #021225;
-      color: var(--mid-gray);
-      text-align: center;
-      padding: 1.5rem;
-      font-size: 0.8rem;
-    }
+    footer { background: #021225; color: var(--mid-gray); text-align: center; padding: 1.5rem; font-size: 0.8rem; line-height: 1.8; }
+    footer a { color: var(--mid-gray); }
     /* MOBILE */
+    @media (max-width: 900px) {
+      .stats-grid { grid-template-columns: repeat(2, 1fr); gap: 2rem; }
+      .partner-grid { grid-template-columns: repeat(2, 1fr); }
+    }
     @media (max-width: 768px) {
       .nav-links { display: none; }
       .hamburger { display: block; }
-      .nav-links.open {
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        top: 64px;
-        left: 0;
-        right: 0;
-        background: var(--white);
-        padding: 1.5rem;
-        gap: 1rem;
-        border-bottom: 1px solid #E5E7EB;
-      }
+      .nav-links.open { display: flex; flex-direction: column; position: absolute; top: 64px; left: 0; right: 0; background: var(--white); padding: 1.5rem; gap: 1rem; border-bottom: 1px solid var(--line); align-items: flex-start; }
       .hero { padding: 8rem 1.5rem 3.5rem; }
-      .about-grid { grid-template-columns: 1fr; gap: 2.5rem; }
-      .cap-grid { grid-template-columns: 1fr; }
-      .contact-info { flex-direction: column; align-items: center; gap: 1.5rem; }
+      .gpc-grid, .cap-grid { grid-template-columns: 1fr; }
+      .partner-grid { grid-template-columns: 1fr; }
+      .proof-grid, .about-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+      .contact-wrap { grid-template-columns: 1fr; gap: 2rem; }
+      .quote-form { grid-template-columns: 1fr; }
     }
   </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "OH Federal Supply LLC",
+    "alternateName": "OH Federal Supply",
+    "url": "https://ohfederal.com",
+    "email": "sam@ohfederal.com",
+    "telephone": "+1-702-509-1775",
+    "description": "SBA-certified Service-Disabled Veteran-Owned Small Business (SDVOSB) and Veteran-Owned Small Business (VOSB) supplying professional AV and audio, IT hardware, and medical-AV displays to federal agencies. Government Purchase Cards accepted for micro-purchases under $10,000.",
+    "slogan": "Pro AV, IT and Medical-AV supply for federal buyers, from an owner who specs the tech.",
+    "address": { "@type": "PostalAddress", "streetAddress": "732 S 6th St, Ste 7191", "addressLocality": "Las Vegas", "addressRegion": "NV", "postalCode": "89101", "addressCountry": "US" },
+    "areaServed": "US",
+    "identifier": [
+      { "@type": "PropertyValue", "propertyID": "CAGE", "value": "20R31" },
+      { "@type": "PropertyValue", "propertyID": "UEI", "value": "ELWUD2BV11M3" }
+    ],
+    "knowsAbout": ["Government Purchase Card supplier", "SDVOSB", "VOSB", "federal micro-purchase", "professional AV and audio", "IT hardware", "medical-AV displays", "GSA", "DLA DIBBS"],
+    "contactPoint": { "@type": "ContactPoint", "contactType": "sales", "email": "sam@ohfederal.com", "telephone": "+1-702-509-1775", "areaServed": "US", "availableLanguage": "English" }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      { "@type": "Question", "name": "Do you accept Government Purchase Cards (GPC)?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. We accept Visa and Mastercard Government Purchase Cards for micro-purchases up to the $10,000 threshold. Quote, card, ship, with no formal solicitation required." } },
+      { "@type": "Question", "name": "Are you an SDVOSB and set-aside eligible?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. OH Federal Supply is an SBA-certified Service-Disabled Veteran-Owned Small Business (SDVOSB) and Veteran-Owned Small Business (VOSB). CAGE 20R31, UEI ELWUD2BV11M3." } },
+      { "@type": "Question", "name": "How fast can I get a quote?", "acceptedAnswer": { "@type": "Answer", "text": "Within 24 hours. Email sam@ohfederal.com or call (702) 509-1775 with what you need and the ship-to facility." } },
+      { "@type": "Question", "name": "What do you supply?", "acceptedAnswer": { "@type": "Answer", "text": "Professional AV and audio, IT hardware and peripherals, medical-AV and clinical displays, office and business equipment, MRO and tools, and safety and PPE, all brand-name product through authorized distribution." } },
+      { "@type": "Question", "name": "Do I need a contract to buy from you?", "acceptedAnswer": { "@type": "Answer", "text": "No. For micro-purchases under $10,000 you can buy directly on your Government Purchase Card with no contract or solicitation. We also support BPA and IDIQ volume." } }
+    ]
+  }
+  </script>
 </head>
 <body>
   <!-- NAV -->
@@ -337,45 +242,222 @@
       </a>
       <ul class="nav-links" id="navLinks">
         <li><a href="#gpc">Purchase Card Buyers</a></li>
-        <li><a href="#about">About</a></li>
         <li><a href="#capabilities">Capabilities</a></li>
-        <li><a href="#naics">NAICS Codes</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#partner">Manufacturers</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="mailto:sam@ohfederal.com?subject=Quote%20Request%20-%20OH%20Federal%20Supply&body=Hi%20Sam%2C%0D%0A%0D%0AI%20would%20like%20a%20quote%20for%3A%0D%0A%0D%0A-%20Item(s)%2Fpart%20numbers%3A%0D%0A-%20Quantity%3A%0D%0A-%20Ship-to%20facility%3A%0D%0A-%20Agency%2Forganization%3A%0D%0A-%20Need-by%20date%3A%0D%0A-%20Paying%20by%20Government%20Purchase%20Card%3F%20(Y%2FN)%0D%0A%0D%0AMy%20info%3A%0D%0A-%20Name%3A%0D%0A-%20Email%3A%0D%0A-%20Phone%3A" class="nav-cta">Request a Quote</a></li>
       </ul>
       <button class="hamburger" onclick="document.getElementById('navLinks').classList.toggle('open')" aria-label="Menu">
         <span></span><span></span><span></span>
       </button>
     </div>
   </nav>
+
   <!-- HERO -->
   <section class="hero">
     <div class="hero-badge">
       <svg viewBox="0 0 16 16"><path d="M8 0l2 5h5.5l-4.5 3.5 1.7 5.5L8 11l-4.7 3 1.7-5.5L.5 5H6z"/></svg>
-      SBA-Certified Service-Disabled Veteran-Owned Small Business (SDVOSB)
+      SBA-Certified Service-Disabled Veteran-Owned Small Business
     </div>
-    <h1>Pro AV, IT &amp; Medical-AV Supply for Federal Buyers</h1>
-    <p>Professional audio-visual systems, IT hardware, and medical-AV displays — delivered to federal agencies with the reliability and accountability of a veteran-owned operation. <strong>Government Purchase Cards accepted.</strong></p>
+    <h1>Pro AV, IT &amp; Medical-AV Supply for Federal Buyers — <span class="accent">on your Government Purchase Card.</span></h1>
+    <p class="lead">Tell us what you need, get a quote within 24 hours, and put it on your card. Brand-name AV, IT, and medical-AV product from a veteran-owned operation with 15+ years of hands-on AV/IT engineering behind every quote. <strong>No contract or solicitation needed.</strong></p>
     <p class="hero-creds">Certified SDVOSB &amp; VOSB &nbsp;•&nbsp; CAGE 20R31 &nbsp;•&nbsp; UEI ELWUD2BV11M3 &nbsp;•&nbsp; GPC Accepted</p>
-    <a href="#contact" class="hero-cta">Request a Quote</a>
+    <div class="hero-ctas">
+      <a href="mailto:sam@ohfederal.com?subject=Quote%20Request%20-%20OH%20Federal%20Supply&body=Hi%20Sam%2C%0D%0A%0D%0AI%20would%20like%20a%20quote%20for%3A%0D%0A%0D%0A-%20Item(s)%2Fpart%20numbers%3A%0D%0A-%20Quantity%3A%0D%0A-%20Ship-to%20facility%3A%0D%0A-%20Agency%2Forganization%3A%0D%0A-%20Need-by%20date%3A%0D%0A-%20Paying%20by%20Government%20Purchase%20Card%3F%20(Y%2FN)%0D%0A%0D%0AMy%20info%3A%0D%0A-%20Name%3A%0D%0A-%20Email%3A%0D%0A-%20Phone%3A" class="btn btn-primary">Request a Quote</a>
+      <a href="#partner" class="btn btn-ghost">Manufacturers: Partner With Us</a>
+    </div>
   </section>
+
+  <!-- TRUST BAR -->
+  <div class="trustbar">
+    <div class="trustbar-inner">
+      <p class="eyebrow">Authorized Distribution &amp; Certifications</p>
+      <div class="chips">
+        <span class="chip">Dell Technologies Federal</span>
+        <span class="chip">Ingram Micro</span>
+        <span class="chip">TD SYNNEX</span>
+        <span class="chip">D&amp;H Distributing</span>
+        <span class="chip">Ergotron Authorized</span>
+        <span class="chip">Grainger</span>
+        <span class="chip">Bound Tree Medical</span>
+        <span class="chip">Amazon Business</span>
+        <span class="chip cert">SBA SDVOSB Certified</span>
+        <span class="chip cert">VOSB Certified</span>
+        <span class="chip cert">NV ESB Tier 1</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- STATS -->
+  <div class="stats">
+    <div class="stats-grid">
+      <div class="stat"><div class="num">15<span class="unit">+</span></div><div class="cap">Years AV/IT operations</div></div>
+      <div class="stat"><div class="num">$40M<span class="unit">+</span></div><div class="cap">Annual tech portfolio managed</div></div>
+      <div class="stat"><div class="num">100<span class="unit">%</span></div><div class="cap">P&amp;T disabled-veteran owned</div></div>
+      <div class="stat"><div class="num">24<span class="unit">hr</span></div><div class="cap">Quote turnaround</div></div>
+    </div>
+  </div>
+
   <!-- GPC / MICRO-PURCHASE -->
   <section class="gpc" id="gpc">
     <div class="container">
       <p class="section-label">Government Purchase Card Buyers</p>
       <h2 class="section-title">Card-Ready. No Contract Needed.</h2>
-      <p class="gpc-intro">For purchases under the $10,000 micro-purchase threshold, skip the solicitation. Tell us what you need, get a quote within 24 hours, and put it on your Government Purchase Card. We're an SBA-certified Service-Disabled Veteran-Owned Small Business (SDVOSB &amp; VOSB) — built to make card buys fast, accurate, and painless.</p>
+      <p class="gpc-intro">For purchases under the $10,000 micro-purchase threshold, skip the solicitation. Tell us what you need, get a quote within 24 hours, and put it on your Government Purchase Card. As an SBA-certified SDVOSB &amp; VOSB, buying from us also helps you meet small-business and veteran procurement goals.</p>
       <div class="gpc-grid">
         <div class="gpc-item"><strong>GPC Accepted</strong><span>Visa &amp; Mastercard, up to the $10K micro-purchase threshold.</span></div>
         <div class="gpc-item"><strong>No Contract Required</strong><span>Quote, card, ship — no formal solicitation needed.</span></div>
-        <div class="gpc-item"><strong>Veteran-Owned</strong><span>SBA-certified Service-Disabled Veteran-Owned Small Business (SDVOSB &amp; VOSB).</span></div>
+        <div class="gpc-item"><strong>Counts Toward Your Goals</strong><span>SDVOSB &amp; VOSB set-aside credit on the buy.</span></div>
         <div class="gpc-item"><strong>24-Hour Quotes</strong><span>Fast turnaround, shipped to any federal facility.</span></div>
         <div class="gpc-item"><strong>Docs on Request</strong><span>W-9, capability statement &amp; line pricing ready to go.</span></div>
         <div class="gpc-item"><strong>Authorized Distribution</strong><span>Brand-name product via Ingram Micro, TD SYNNEX, D&amp;H &amp; Grainger.</span></div>
       </div>
+      <div class="buy-line">
+        <p class="lbl">Fast-moving items buyers card most</p>
+        <div class="buy-chips">
+          <span class="buy-chip">Monitors &amp; displays</span>
+          <span class="buy-chip">Docking stations</span>
+          <span class="buy-chip">Cables &amp; adapters</span>
+          <span class="buy-chip">Keyboards &amp; mice</span>
+          <span class="buy-chip">Webcams &amp; headsets</span>
+          <span class="buy-chip">Microphones &amp; audio</span>
+          <span class="buy-chip">Hand &amp; power tools</span>
+          <span class="buy-chip">PPE &amp; safety</span>
+        </div>
+      </div>
       <p class="gpc-cred">Certified SDVOSB &amp; VOSB &nbsp;•&nbsp; CAGE 20R31 &nbsp;•&nbsp; UEI ELWUD2BV11M3</p>
-      <a href="#contact" class="hero-cta">Request a Quote</a>
+      <a href="mailto:sam@ohfederal.com?subject=Quote%20Request%20-%20OH%20Federal%20Supply&body=Hi%20Sam%2C%0D%0A%0D%0AI%20would%20like%20a%20quote%20for%3A%0D%0A%0D%0A-%20Item(s)%2Fpart%20numbers%3A%0D%0A-%20Quantity%3A%0D%0A-%20Ship-to%20facility%3A%0D%0A-%20Agency%2Forganization%3A%0D%0A-%20Need-by%20date%3A%0D%0A-%20Paying%20by%20Government%20Purchase%20Card%3F%20(Y%2FN)%0D%0A%0D%0AMy%20info%3A%0D%0A-%20Name%3A%0D%0A-%20Email%3A%0D%0A-%20Phone%3A" class="btn btn-primary">Request a Quote</a>
     </div>
   </section>
+
+  <!-- CAPABILITIES -->
+  <section class="capabilities" id="capabilities">
+    <div class="container">
+      <p class="section-label">What We Supply</p>
+      <h2 class="section-title">Core Product Categories</h2>
+      <p class="section-intro" style="margin-bottom:0.5rem;">Six core categories below — and if you need something outside them, we'll source it. See <a href="#services" style="color:var(--red);font-weight:600;text-decoration:none;">Beyond the Catalog</a>.</p>
+      <div class="cap-grid">
+        <div class="cap-card">
+          <div class="cap-icon"><svg viewBox="0 0 24 24"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg></div>
+          <h3>Pro AV &amp; Audio</h3>
+          <p>Professional audio, displays, conferencing and presentation systems, microphones, intercom/PA, and signal distribution — equipment supply backed by 15+ years of hands-on AV and live-event engineering.</p>
+        </div>
+        <div class="cap-card">
+          <div class="cap-icon"><svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></div>
+          <h3>IT Hardware &amp; Peripherals</h3>
+          <p>Laptops, desktops, servers, monitors, docking stations, networking, storage, keyboards, mice, and cables from authorized distributors.</p>
+        </div>
+        <div class="cap-card">
+          <div class="cap-icon"><svg viewBox="0 0 24 24"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></div>
+          <h3>Medical-AV &amp; Clinical Displays</h3>
+          <p>Diagnostic and imaging displays, patient-monitor displays, and imaging-adjacent AV — the bridge between professional audio-visual systems and clinical environments.</p>
+        </div>
+        <div class="cap-card">
+          <div class="cap-icon"><svg viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></svg></div>
+          <h3>Business &amp; Office Equipment</h3>
+          <p>Printers, scanners, business machines, conference-room and presentation technology, ergonomic mounts and carts (Ergotron authorized), and everyday office IT.</p>
+        </div>
+        <div class="cap-card">
+          <div class="cap-icon"><svg viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg></div>
+          <h3>MRO, Tools &amp; Facility</h3>
+          <p>Hand and power tools, maintenance supplies, and facility and operations essentials via Grainger and Zoro.</p>
+        </div>
+        <div class="cap-card">
+          <div class="cap-icon"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+          <h3>Safety &amp; General Supplies</h3>
+          <p>Safety equipment, PPE, and general commercial and office supplies available on request.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BEYOND THE CATALOG / SERVICES -->
+  <section id="services" style="background: var(--light-gray);">
+    <div class="container">
+      <p class="section-label">How We Work</p>
+      <h2 class="section-title">Beyond the Catalog</h2>
+      <p class="section-intro">We're a sourcing partner, not just a price list. If you can describe it, we'll find a compliant way to deliver it — and package it the way your team actually needs it.</p>
+      <div class="cap-grid">
+        <div class="cap-card">
+          <div class="cap-icon"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div>
+          <h3>We Source Anything</h3>
+          <p>Need something we don't list? We'll find it — through Amazon Business's enormous catalog, our authorized distributors, or by standing up a brand-new manufacturer partnership just to win your requirement.</p>
+        </div>
+        <div class="cap-card">
+          <div class="cap-icon"><svg viewBox="0 0 24 24"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg></div>
+          <h3>Kitting &amp; Consolidated Fulfillment</h3>
+          <p>We can receive components to our facility, repack, and ship complete, ready-to-issue kits to a single destination — ideal for multi-item safety, IT, or AV bundles that would otherwise arrive in a dozen separate boxes.</p>
+        </div>
+        <div class="cap-card">
+          <div class="cap-icon"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg></div>
+          <h3>One Accountable Vendor</h3>
+          <p>One quote, one PO, one veteran-owned point of contact who answers the phone — instead of chasing five suppliers to fill a single requirement.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PARTNER / MANUFACTURER CHANNEL -->
+  <section class="partner" id="partner">
+    <div class="container">
+      <p class="section-label">Manufacturers &amp; OEMs</p>
+      <h2 class="section-title">Your SDVOSB Channel Into the Federal Market</h2>
+      <p class="section-intro">Make a great AV, IT, display, or ergonomic product but can't reach federal set-aside dollars on your own? We put your line in front of government buyers — as a certified SDVOSB &amp; VOSB, with an owner who actually understands the technology and can position it accurately. Not a paper front: a real channel partner who can spec, quote, and support what you build.</p>
+      <div class="partner-grid">
+        <div class="partner-card">
+          <div class="pc-icon"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+          <h3>Set-Aside Access</h3>
+          <p>We pursue SDVOSB &amp; VOSB set-aside and VA sole-source opportunities your company can't bid directly.</p>
+        </div>
+        <div class="partner-card">
+          <div class="pc-icon"><svg viewBox="0 0 24 24"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></div>
+          <h3>We Know Your Product</h3>
+          <p>15+ years specifying AV/IT systems means accurate positioning and quoting — not generic box-listing.</p>
+        </div>
+        <div class="partner-card">
+          <div class="pc-icon"><svg viewBox="0 0 24 24"><rect x="1" y="3" width="15" height="13"/><path d="M16 8h4l3 3v5h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg></div>
+          <h3>Authorized Fulfillment</h3>
+          <p>Backed by Ingram Micro, TD SYNNEX, D&amp;H and Dell Federal for compliant, nationwide delivery.</p>
+        </div>
+        <div class="partner-card">
+          <div class="pc-icon"><svg viewBox="0 0 24 24"><line x1="12" y1="20" x2="12" y2="10"/><line x1="18" y1="20" x2="18" y2="4"/><line x1="6" y1="20" x2="6" y2="16"/></svg></div>
+          <h3>Micro-Purchase to BPA</h3>
+          <p>Scale from sub-$10K Government Purchase Card buys up through BPA and IDIQ volume.</p>
+        </div>
+      </div>
+      <a href="mailto:sam@ohfederal.com?subject=Manufacturer%20Partnership%20Inquiry" class="btn btn-primary">Become a Partner</a>
+    </div>
+  </section>
+
+  <!-- PROOF -->
+  <section class="proof" id="proof">
+    <div class="container">
+      <div class="proof-grid">
+        <div>
+          <p class="section-label">Why Agencies Trust Us</p>
+          <h2 class="section-title">A New Company, Run by a Proven Operator</h2>
+          <p class="section-intro">OH Federal Supply is a new entity — but it's run by someone who has managed enterprise technology at scale and served in uniform. The credentials behind every quote:</p>
+          <ul>
+            <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg><span><strong>$40M+ annual technology portfolio</strong> at a 300,000 sq ft live-event venue.</span></li>
+            <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg><span><strong>Enterprise 10GB PoE network buildout</strong> — spec, procurement &amp; oversight.</span></li>
+            <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg><span><strong>USMC Combat Photographer</strong> — Iraq deployment, Al Anbar Province (QRF/MITT).</span></li>
+            <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg><span><strong>DINFOS &amp; Xerox Military School trained</strong> — servers, networking, digital production.</span></li>
+            <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg><span><strong>CompTIA A+</strong> · Gold Telly Award · Eventex Awards Juror 2026 · APEX Accelerator client.</span></li>
+          </ul>
+        </div>
+        <div class="proof-card">
+          <h3>Federal Readiness</h3>
+          <div class="pc-row"><span>SAM.gov</span><span>Active</span></div>
+          <div class="pc-row"><span>VetCert SDVOSB / VOSB</span><span>Certified</span></div>
+          <div class="pc-row"><span>DLA DIBBS</span><span>Registered</span></div>
+          <div class="pc-row"><span>NV ESB (Tier 1)</span><span>Certified</span></div>
+          <div class="pc-row"><span>GSA MAS</span><span>Planned</span></div>
+          <div class="pc-row"><span>CAGE / UEI</span><span>20R31 / ELWUD2BV11M3</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- ABOUT -->
   <section class="about" id="about">
     <div class="container">
@@ -383,112 +465,39 @@
         <div class="about-text">
           <p class="section-label">About Us</p>
           <h2 class="section-title">Built to Serve</h2>
-          <p>OH Federal Supply LLC is a Nevada-based, veteran-owned small business founded by Samuel R. Howard, a United States Marine Corps veteran with a 100% Permanent & Total disability rating. OH Federal Supply is an SBA-certified Service-Disabled Veteran-Owned Small Business (SDVOSB) and Veteran-Owned Small Business (VOSB), certified June 2026.</p>
-          <p>We provide commercial products to federal agencies through streamlined procurement channels including SAM.gov, DLA DIBBS, and GSA Schedule. Our focus is getting the right supplies to government buyers quickly, competitively, and without red tape.</p>
-          <p>As a single-member LLC with low overhead and strong distributor relationships, we deliver value that larger competitors can't match&mdash;with the reliability agencies expect and the responsiveness only a small business can offer.</p>
+          <p>OH Federal Supply LLC is a Nevada-based, veteran-owned small business founded by Samuel R. Howard, a United States Marine Corps veteran with a 100% Permanent &amp; Total disability rating. We are an SBA-certified Service-Disabled Veteran-Owned Small Business (SDVOSB) and Veteran-Owned Small Business (VOSB), certified June 2026.</p>
+          <p>We provide commercial products to federal agencies through streamlined procurement channels including SAM.gov, DLA DIBBS, and (planned) GSA Schedule. Our focus is getting the right supplies to government buyers quickly, competitively, and without red tape.</p>
+          <p>As a single-member LLC with low overhead and strong distributor relationships, we deliver value larger competitors can't match — with the reliability agencies expect and the responsiveness only a small business can offer.</p>
         </div>
         <div class="about-stats">
-          <div class="stat-card">
-            <div class="number">SDVOSB</div>
-            <div class="label">SBA-Certified</div>
-          </div>
-          <div class="stat-card">
-            <div class="number">USMC</div>
-            <div class="label">Veteran Founded</div>
-          </div>
-          <div class="stat-card">
-            <div class="number">100%</div>
-            <div class="label">P&T Disability Rating</div>
-          </div>
-          <div class="stat-card">
-            <div class="number">NV</div>
-            <div class="label">Las Vegas, Nevada</div>
-          </div>
+          <div class="stat-card"><div class="number">SDVOSB</div><div class="label">SBA-Certified</div></div>
+          <div class="stat-card"><div class="number">USMC</div><div class="label">Veteran Founded</div></div>
+          <div class="stat-card"><div class="number">100%</div><div class="label">P&amp;T Disability Rating</div></div>
+          <div class="stat-card"><div class="number">NV</div><div class="label">Las Vegas, Nevada</div></div>
         </div>
       </div>
     </div>
   </section>
-  <!-- CAPABILITIES -->
-  <section class="capabilities" id="capabilities">
-    <div class="container">
-      <p class="section-label">What We Supply</p>
-      <h2 class="section-title">Core Product Categories</h2>
-      <div class="cap-grid">
-        <div class="cap-card">
-          <div class="cap-icon">
-            <svg viewBox="0 0 24 24"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg>
-          </div>
-          <h3>Pro AV &amp; Audio</h3>
-          <p>Professional audio, displays, conferencing and presentation systems, microphones, and signal distribution &mdash; equipment supply backed by 15+ years of hands-on AV and live-event experience.</p>
-        </div>
-        <div class="cap-card">
-          <div class="cap-icon">
-            <svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
-          </div>
-          <h3>IT Hardware &amp; Peripherals</h3>
-          <p>Laptops, monitors, docking stations, networking, storage, keyboards, mice, cables, and computer accessories from authorized distributors.</p>
-        </div>
-        <div class="cap-card">
-          <div class="cap-icon">
-            <svg viewBox="0 0 24 24"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
-          </div>
-          <h3>Medical-AV &amp; Clinical Displays</h3>
-          <p>Medical-grade displays, monitors, and imaging-adjacent AV &mdash; the bridge between professional audio-visual systems and clinical environments.</p>
-        </div>
-        <div class="cap-card">
-          <div class="cap-icon">
-            <svg viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></svg>
-          </div>
-          <h3>Business &amp; Office Equipment</h3>
-          <p>Printers, scanners, business machines, conference-room and presentation technology, and everyday office IT.</p>
-        </div>
-        <div class="cap-card">
-          <div class="cap-icon">
-            <svg viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
-          </div>
-          <h3>MRO, Tools &amp; Facility</h3>
-          <p>Hand and power tools, maintenance supplies, and facility and operations essentials.</p>
-        </div>
-        <div class="cap-card">
-          <div class="cap-icon">
-            <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-          </div>
-          <h3>Safety &amp; General Supplies</h3>
-          <p>Safety equipment, PPE, and general commercial and office supplies available on request.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- NAICS -->
+
+  <!-- NAICS + REGISTRATIONS -->
   <section class="naics" id="naics">
     <div class="container">
-      <p class="section-label">Codes & Classifications</p>
+      <p class="section-label">Codes &amp; Classifications</p>
       <h2 class="section-title">NAICS Codes</h2>
       <div class="naics-grid">
-        <div class="naics-item">
-          <span class="naics-code">423430</span>
-          <span class="naics-desc">Computer & Peripheral Equipment Wholesale</span>
-        </div>
-        <div class="naics-item">
-          <span class="naics-code">423450</span>
-          <span class="naics-desc">Medical & Safety Equipment</span>
-        </div>
-        <div class="naics-item">
-          <span class="naics-code">423710</span>
-          <span class="naics-desc">Hardware & Tool Wholesale</span>
-        </div>
-        <div class="naics-item">
-          <span class="naics-code">423840</span>
-          <span class="naics-desc">Industrial Supplies Wholesale</span>
-        </div>
-        <div class="naics-item">
-          <span class="naics-code">423490</span>
-          <span class="naics-desc">Other Commercial Equipment Wholesale</span>
-        </div>
-        <div class="naics-item">
-          <span class="naics-code">423620</span>
-          <span class="naics-desc">Consumer Electronics Wholesale</span>
-        </div>
+        <div class="naics-item"><span class="naics-code">423430</span><span class="naics-desc">Computer &amp; Peripheral Equipment Wholesale</span></div>
+        <div class="naics-item"><span class="naics-code">423450</span><span class="naics-desc">Medical &amp; Safety Equipment</span></div>
+        <div class="naics-item"><span class="naics-code">423710</span><span class="naics-desc">Hardware &amp; Tool Wholesale</span></div>
+        <div class="naics-item"><span class="naics-code">423840</span><span class="naics-desc">Industrial Supplies Wholesale</span></div>
+        <div class="naics-item"><span class="naics-code">423490</span><span class="naics-desc">Other Commercial Equipment Wholesale</span></div>
+        <div class="naics-item"><span class="naics-code">423620</span><span class="naics-desc">Consumer Electronics Wholesale</span></div>
+      </div>
+      <div class="reg-strip">
+        <span class="reg-pill"><span class="dot">●</span> SAM.gov Active</span>
+        <span class="reg-pill"><span class="dot">●</span> SDVOSB &amp; VOSB Certified</span>
+        <span class="reg-pill"><span class="dot">●</span> DLA DIBBS Registered</span>
+        <span class="reg-pill"><span class="dot">●</span> NV ESB Tier 1</span>
+        <span class="reg-pill"><span class="dot amber">●</span> GSA MAS — Planned</span>
       </div>
       <h3 style="margin-top: 2.5rem; font-size: 1.1rem; color: var(--navy); font-weight: 600;">Target Agencies</h3>
       <p style="margin-top: 0.5rem; color: var(--mid-gray); font-size: 0.95rem;">
@@ -496,33 +505,81 @@
       </p>
     </div>
   </section>
-  <!-- CONTACT -->
-  <section class="contact" id="contact">
+
+  <!-- FAQ -->
+  <section class="faq" id="faq">
     <div class="container">
-      <p class="section-label">Get in Touch</p>
-      <h2 class="section-title">Ready to Work Together?</h2>
-      <p style="color: #B0BECF; max-width: 500px; margin: 0 auto;">
-        Whether you're a contracting officer, procurement specialist, or agency buyer&mdash;we'd like to hear from you.
-      </p>
-      <div class="contact-info">
-        <div class="contact-item">
-          <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-          <a href="mailto:sam@ohfederal.com">sam@ohfederal.com</a>
+      <p class="section-label">For Government Buyers</p>
+      <h2 class="section-title">Frequently Asked Questions</h2>
+      <div class="faq-list">
+        <div class="faq-item">
+          <h3>Do you accept Government Purchase Cards (GPC)?</h3>
+          <p>Yes. We accept Visa &amp; Mastercard Government Purchase Cards for micro-purchases up to the $10,000 threshold — quote, card, ship, with no formal solicitation required.</p>
         </div>
-        <div class="contact-item">
-          <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.81.36 1.6.68 2.36a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.76.32 1.55.55 2.36.68A2 2 0 0 1 22 16.92z"/></svg>
-          <a href="tel:+17025091775">(702) 509-1775</a>
+        <div class="faq-item">
+          <h3>Are you an SDVOSB and set-aside eligible?</h3>
+          <p>Yes. OH Federal Supply is an SBA-certified Service-Disabled Veteran-Owned Small Business (SDVOSB) and Veteran-Owned Small Business (VOSB). CAGE 20R31 · UEI ELWUD2BV11M3.</p>
         </div>
-        <div class="contact-item">
-          <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-          <span>732 S 6th St, Ste 7191<br>Las Vegas, NV 89101</span>
+        <div class="faq-item">
+          <h3>How fast can I get a quote?</h3>
+          <p>Within 24 hours. Email sam@ohfederal.com or call (702) 509-1775 with what you need and the ship-to facility, and we'll turn a line-item quote around fast.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Do I need a contract to buy from you?</h3>
+          <p>No. For micro-purchases under $10,000 you can buy directly on your Government Purchase Card — no contract or solicitation needed. We also support BPA and IDIQ volume as it grows.</p>
+        </div>
+        <div class="faq-item">
+          <h3>What do you supply?</h3>
+          <p>Professional AV &amp; audio, IT hardware &amp; peripherals, medical-AV &amp; clinical displays, office &amp; business equipment, MRO/tools, and safety/PPE — brand-name product through authorized distribution (Ingram Micro, TD SYNNEX, D&amp;H, Dell Federal, Grainger).</p>
         </div>
       </div>
     </div>
   </section>
+
+  <!-- CONTACT + QUOTE FORM -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <p class="section-label">Request a Quote</p>
+      <h2 class="section-title">Tell Us What You Need — Quote in 24 Hours</h2>
+      <p class="contact-lead">Contracting officer, GPC cardholder, agency buyer, or a manufacturer looking for a federal channel — start here. One click opens a pre-filled email, or just call.</p>
+      <div class="contact-wrap">
+        <div class="quote-help">
+          <p style="color:#fff;font-weight:700;font-size:1.05rem;margin-bottom:0.4rem;">Email us your quote request — reply within 24 hours.</p>
+          <p style="color:#B0BECF;font-size:0.92rem;margin-bottom:0.9rem;">The button opens your email app pre-filled. Include these and we can turn it around same-day:</p>
+          <ul style="list-style:none;margin:0 0 1.5rem;display:grid;gap:0.4rem;">
+            <li style="color:#C7D2DF;font-size:0.92rem;">• Item(s) / part numbers + quantity</li>
+            <li style="color:#C7D2DF;font-size:0.92rem;">• Ship-to facility</li>
+            <li style="color:#C7D2DF;font-size:0.92rem;">• Agency / organization</li>
+            <li style="color:#C7D2DF;font-size:0.92rem;">• Need-by date</li>
+            <li style="color:#C7D2DF;font-size:0.92rem;">• Paying by Government Purchase Card?</li>
+          </ul>
+          <a href="mailto:sam@ohfederal.com?subject=Quote%20Request%20-%20OH%20Federal%20Supply&body=Hi%20Sam%2C%0D%0A%0D%0AI%20would%20like%20a%20quote%20for%3A%0D%0A%0D%0A-%20Item(s)%2Fpart%20numbers%3A%0D%0A-%20Quantity%3A%0D%0A-%20Ship-to%20facility%3A%0D%0A-%20Agency%2Forganization%3A%0D%0A-%20Need-by%20date%3A%0D%0A-%20Paying%20by%20Government%20Purchase%20Card%3F%20(Y%2FN)%0D%0A%0D%0AMy%20info%3A%0D%0A-%20Name%3A%0D%0A-%20Email%3A%0D%0A-%20Phone%3A" class="btn btn-primary">Email Your Quote Request</a>
+          <p class="form-note" style="margin-top:0.9rem;">Prefer to call? (702) 509-1775 — we quote by phone too.</p>
+        </div>
+        <div class="contact-side">
+          <div class="contact-item">
+            <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <a href="mailto:sam@ohfederal.com">sam@ohfederal.com</a>
+          </div>
+          <div class="contact-item">
+            <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.81.36 1.6.68 2.36a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.76.32 1.55.55 2.36.68A2 2 0 0 1 22 16.92z"/></svg>
+            <a href="tel:+17025091775">(702) 509-1775</a>
+          </div>
+          <div class="contact-item">
+            <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>732 S 6th St, Ste 7191<br>Las Vegas, NV 89101</span>
+          </div>
+          <div class="side-creds">Certified SDVOSB &amp; VOSB<br>CAGE 20R31 · UEI ELWUD2BV11M3<br>GPC Accepted · Quotes in 24 hrs</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- FOOTER -->
   <footer>
-    &copy; 2026 OH Federal Supply LLC. &nbsp;|&nbsp; 732 S 6th St, Ste 7191, Las Vegas, NV 89101 &nbsp;|&nbsp; Certified SDVOSB &amp; VOSB &nbsp;|&nbsp; CAGE 20R31 &nbsp;|&nbsp; UEI ELWUD2BV11M3
+    &copy; 2026 OH Federal Supply LLC. &nbsp;|&nbsp; 732 S 6th St, Ste 7191, Las Vegas, NV 89101 &nbsp;|&nbsp; Certified SDVOSB &amp; VOSB &nbsp;|&nbsp; CAGE 20R31 &nbsp;|&nbsp; UEI ELWUD2BV11M3 &nbsp;|&nbsp; <a href="mailto:sam@ohfederal.com">sam@ohfederal.com</a>
   </footer>
+
+  <!-- Quote buttons open a pre-filled email via mailto; no JS or backend needed. -->
 </body>
 </html>
